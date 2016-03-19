@@ -1,9 +1,8 @@
-package skyler.tao.leetcode;
-
 import java.util.Arrays;
 
-public class ThreeSumClosest {
+public class Solution16 {
 
+	@SuppressWarnings("null")
 	public int threeSum(int[] nums, int target) {
 
 		if (nums == null || nums.length < 3) return (Integer)null;
@@ -36,5 +35,13 @@ public class ThreeSumClosest {
 			}
 		}
 		return result;
+	}
+
+	public static void main(String[] args) {
+		Solution16 mySolution = new Solution16();
+		int[] nums = {-1, 2, 1, -4};
+		int target = 1;
+		int result = mySolution.threeSum(nums, target);
+		System.out.println(result);
 	}
 }
